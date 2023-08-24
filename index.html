@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script>
+    window.onload = function() {
+      var isAndroid = /Android/i.test(navigator.userAgent);
+      
+      if (!isAndroid) {
+        alert("抱歉，此页面仅支持安卓设备访问。");
+        window.location.href = "/notallow.html"; // 跳转到 notallow.html 页面
+      }
+    };
+  </script>
+  <script>
+    window.onload = function() {
+      var isWeChat = /MicroMessenger/i.test(navigator.userAgent);
+      
+      if (isWeChat) {
+        alert("抱歉，此页面仅支持安卓设备从浏览器访问，请在下一个页面复制网址并在浏览器前往。");
+        window.location.href = "/notallow.html"; 
+      }
+    };
+  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>下载页面</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ff0000;
+  }
+  
+  mrdh {
+    text-align: center;
+    color: #ffffff;
+    font-size: 9vw;
+    font-style:inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  dangr {
+    text-align: center;
+    color: #ffffff;
+    font-size: 5vw;
+    font-style:inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .content {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .download-button {
+    display: block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .download-button2 {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #72a8fd69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .download-button3 {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #17c917;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body >
+  <div class="content">
+    <br>
+    <br>
+    <br>
+    <br>
+    <mrdh>广告永远不是用户的福祉!</mrdh>
+    <br>  
+    <mrdh>广告永远都是用户的烦恼!</mrdh>
+    <br>
+    <br>
+    <a class="download-button3" href="https://mp.weixin.qq.com/s/ha6hHr40umlj-ExHdGFXXw" download>点击查看李跳跳被腾讯起诉原文</a>
+    <a class="download-button3" href="https://mp.weixin.qq.com/s/gsC9STZlGrPNNEKUV4btkA" download>点击查看李跳跳本人对此事的回应</a>
+    <a class="download-button" href="链接到你的文件.pdf" download>下载李跳跳2.2备份安装包</a>
+    <a class="download-button2" href="#" download>备用链接1</a>
+    <a class="download-button2" href="#" download>备用链接2</a>
+    <br>
+    <br>
+    <dangr>当然,目前轻启动似乎还没有收到警告,还可以正常使用,但是部分功能需要收费,大家可以自行斟酌下载.</dangr>
+    <a class="download-button2" href="链接到你的文件.pdf" download>下载轻启动2.36备份安装包</a>
+    <a class="download-button2" href="#" download>备用链接1</a>
+    <a class="download-button2" href="#" download>备用链接2</a>
+  </div>
+
+</body>
+</html>
